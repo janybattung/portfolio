@@ -1,64 +1,83 @@
 * {
-    box-sizing: border-box;
-    /* background-image: url(background.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-  }
-  
-  body {
-    font-family: "Open Sans",
-    sans-serif; 
-    font-size: 18px;
-    color: #444;
-    text-align: center;
-    line-height: 1.5;
-  }
+  box-sizing: border-box;
+}
 
-  nav,
-  footer {
-    padding: 1% 0;
-    background-color: #aaa;
-  }
+body {
+  font-family: "Open Sans",
+  sans-serif; 
+  font-size: 18px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
 
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-  }
+h1 {
+  font-family: 'Parisienne';
+  font-size: 50px;
+}
 
-  header {
-    padding: 12% 0;
-  }
+h2 {
+  font-family: 'Lato';
+}
 
-  section {
-    min-height: 200px;
-    padding: 6% 0;
-    background-color: #bbb;
-  }
+nav,
+footer {
+  padding: 1% 0;
+  /* background-color: #aaa; */
+  background-color: #fabec0;
+}
 
-  section:nth-child(even) {
-    background-color: #ddd;
-  }
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #a8cbe5;
+}
+
+header {
+  padding: 5% 0;
+}
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  /* background-color: #bbb; */
+  background-color: #e5edff;
+}
+
+section:nth-child(even) {
+  /* background-color: #ddd; */
+  background-color: #fef4ca;
+}
 .technology {
-  margin: 0;
+margin: 0;
 }
 
 .gallery {
-  width: 100%;
-  margin: 0;
+width: 100%;
+margin: 0;
 }
 
 @media only screen and (min-width: 700px) { /*tablet*/
 .images {
-  width: 100%; /*49.99999%*/
-  margin: 6px 0;
+width: 100%; /*49.99999%*/
+margin: 6px 0;
 }
 }
 @media only screen and (min-width: 1025px){ /*desktop*/
-  .images {
-  /* padding: 0 6px;  */
-  width: 100%; /*24.99999%*/
+.images {
+/* padding: 0 6px;  */
+width: 100%; /*24.99999%*/
 }
+
+h1 {
+  font-size: 100px;
+}
+
+header {
+  padding: 2% 0;
+}
+
 }
