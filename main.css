@@ -6,58 +6,104 @@ body {
   font-family: "Open Sans",
   sans-serif; 
   font-size: 18px;
-  color: #444;
   text-align: center;
   line-height: 1.5;
-}
+  background: url('/images/background.jpeg') no-repeat center center fixed;
+  background-size: cover;
 
+}
 h1 {
-  font-family: 'Parisienne';
-  font-size: 50px;
+  font-size: 70px;
+  font-family: 'My-favorite-font';
+  margin-bottom: 0;
 }
 
 h2 {
+  font-family: 'Quicksand';
+  margin-top: 0;
+}
+
+h3 {
   font-family: 'Lato';
+  padding: 0;
+}
+
+p {
+  padding: 10px;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 0.3em;
+}
+
+.startButton {
+  background-color: #292838;
+  height: 50px;
+  width: 50%;
+  color: white;
+  font-size: 16px;
+  border: none;
 }
 
 nav,
 footer {
   padding: 1% 0;
-  /* background-color: #aaa; */
-  background-color: #fabec0;
+  background-color: #4b6588;
+  color: white;
+  font-size: 14px;
+  width: 100%;
 }
 
 nav {
   position: fixed;
+  width: 100%;
+  padding: 20px;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
-  background-color: #a8cbe5;
+  background-color: #2a465c;
+  color: white;
+}
+.hamburger {
+  justify-content: flex-end;
+  display: flex;
+}
+
+ul#horizontal-list {
+  display: none;
 }
 
 header {
   padding: 5% 0;
 }
 
+.img {
+  width: 200px;
+  border-radius: 50%;
+}
+.img1 {
+  width: 200px;
+  padding: 5px;
+}
+.img2 {
+  width: 50%;
+}
 section {
   min-height: 200px;
   padding: 6% 0;
-  /* background-color: #bbb; */
-  background-color: #e5edff;
 }
 
 section:nth-child(even) {
-  /* background-color: #ddd; */
-  background-color: #fef4ca;
-}
-.technology {
-margin: 0;
+  background-color: #b9daeb;
 }
 
 .gallery {
 width: 100%;
 margin: 0;
+}
+@font-face {
+  font-family: 'My-favorite-font';
+  src: url('CanelaBarkBoldPersonal.ttf') format('truetype'); 
 }
 
 @media only screen and (min-width: 700px) { /*tablet*/
@@ -65,6 +111,13 @@ margin: 0;
 width: 100%; /*49.99999%*/
 margin: 6px 0;
 }
+
+ul#horizontal-list {
+  min-width: 696px;
+  list-style: none;
+  padding-top: 20px;
+}
+
 }
 @media only screen and (min-width: 1025px){ /*desktop*/
 .images {
@@ -72,8 +125,27 @@ margin: 6px 0;
 width: 100%; /*24.99999%*/
 }
 
+.startButton {
+  height: 60px;
+  width: 20%;
+  margin-top: 20px;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+p {
+  margin: 10px 200px 20px 200px;
+}
+
 h1 {
   font-size: 100px;
+}
+
+.gallery {
+  
+  width:100%;
+  object-fit: contain;
 }
 
 header {
@@ -81,3 +153,17 @@ header {
 }
 
 }
+
+ul#horizontal-list {
+  min-width: 696px;
+  list-style: none;
+  padding-top: 20px;
+  }
+  ul#horizontal-list li {
+  display: inline;
+  margin-left: 20px;
+  cursor: pointer;
+  }
+  li:hover {
+    color: red;
+  }
