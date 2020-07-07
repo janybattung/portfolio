@@ -10,6 +10,7 @@ body {
   line-height: 1.5;
   background: url('./images/background.jpeg') no-repeat center center fixed;
   background-size: cover;
+  margin: 0;
 
 }
 h1 {
@@ -121,8 +122,7 @@ ul#horizontal-list {
 }
 @media only screen and (min-width: 1025px){ /*desktop*/
 .images {
-/* padding: 0 6px;  */
-width: 100%; /*24.99999%*/
+width: 100%; 
 }
 .hamburger {
   display: none;
@@ -135,25 +135,44 @@ width: 100%; /*24.99999%*/
   font-size: 16px;
   border: none;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 
+a:hover { 
+  text-decoration: none; 
+  color: black;
+}
+.links {
+  display: flex;
+  justify-content: center;
+}
 .img2 {
   width: 20%;
 }
 ul#horizontal-list {
   display: flex;
+  justify-content: center;
   min-width: 696px;
+  margin: 0 auto;
+  /* margin-left: 40%;
+  margin-right: 35%; */
   list-style: none;
   padding-top: 20px;
   padding-left: 0;
   font-size: 16px;
+
 } 
+
 ul#horizontal-list li {
   display: inline;
   margin-left: 20px;
   cursor: pointer;
 }
+
 li:hover {
-  color: red;
+  color: gray;
 }
 p {
   margin: 10px 200px 20px 200px;
