@@ -124,7 +124,9 @@ ul#horizontal-list {
 /* padding: 0 6px;  */
 width: 100%; /*24.99999%*/
 }
-
+.hamburger {
+  display: none;
+}
 .startButton {
   height: 60px;
   width: 20%;
@@ -137,10 +139,21 @@ width: 100%; /*24.99999%*/
 .img2 {
   width: 20%;
 }
-
 ul#horizontal-list {
   display: flex;
-  justify-content: space-around;
+  min-width: 696px;
+  list-style: none;
+  padding-top: 20px;
+  padding-left: 0;
+  font-size: 16px;
+} 
+ul#horizontal-list li {
+  display: inline;
+  margin-left: 20px;
+  cursor: pointer;
+}
+li:hover {
+  color: red;
 }
 p {
   margin: 10px 200px 20px 200px;
@@ -162,16 +175,16 @@ header {
 
 }
 
-ul#horizontal-list {
+/* ul#horizontal-list {
   min-width: 696px;
   list-style: none;
   padding-top: 20px;
-  }
-  ul#horizontal-list li {
+  } */
+  /* ul#horizontal-list li {
   display: inline;
   margin-left: 20px;
   cursor: pointer;
   }
   li:hover {
     color: red;
-  }
+  } */
