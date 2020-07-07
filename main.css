@@ -133,6 +133,11 @@ width: 100%; /*24.99999%*/
   font-size: 16px;
   border: none;
 }
+
+.img2 {
+  width: 20%;
+}
+
 ul#horizontal-list {
   display: flex;
   justify-content: space-around;
