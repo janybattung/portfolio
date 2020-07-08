@@ -11,8 +11,8 @@ body {
   background: url('./images/background.jpeg') no-repeat center center fixed;
   background-size: cover;
   margin: 0;
-
 }
+
 h1 {
   font-size: 70px;
   font-family: 'My-favorite-font';
@@ -22,6 +22,7 @@ h1 {
 h2 {
   font-family: 'Quicksand';
   margin-top: 0;
+  margin-bottom: 5px;
 }
 
 h3 {
@@ -36,13 +37,32 @@ p {
   margin-bottom: 0.3em;
 }
 
-.startButton {
+.address {
+  font-style: unset;
+}
+
+.cvButton {
   background-color: #292838;
   height: 50px;
   width: 50%;
   color: white;
   font-size: 16px;
   border: none;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  font-size: 21px;
+}
+
+.link1 {
+  padding-left: 0.3em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 nav,
@@ -65,6 +85,7 @@ nav {
   background-color: #2a465c;
   color: white;
 }
+
 .hamburger {
   justify-content: flex-end;
   display: flex;
@@ -75,20 +96,23 @@ ul#horizontal-list {
 }
 
 header {
-  padding: 5% 0;
+  padding: 5% 0 0 0;
 }
 
 .img {
   width: 200px;
   border-radius: 50%;
 }
+
 .img1 {
   width: 200px;
   padding: 5px;
 }
+
 .img2 {
   width: 50%;
 }
+
 section {
   min-height: 200px;
   padding: 6% 0;
@@ -102,6 +126,21 @@ section:nth-child(even) {
 width: 100%;
 margin: 0;
 }
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+.fa {
+  margin: 0 10px;
+}
+
 @font-face {
   font-family: 'My-favorite-font';
   src: url('CanelaBarkBoldPersonal.ttf') format('truetype'); 
@@ -109,60 +148,28 @@ margin: 0;
 
 @media only screen and (min-width: 700px) { /*tablet*/
 .images {
-width: 100%; /*49.99999%*/
+width: 100%;
 margin: 6px 0;
 }
 
-ul#horizontal-list {
-  min-width: 696px;
-  list-style: none;
-  padding-top: 20px;
+.img {
+  margin: 0;
+  padding-bottom: 0;
 }
 
-}
-@media only screen and (min-width: 1025px){ /*desktop*/
-.images {
-width: 100%; 
-}
 .hamburger {
   display: none;
 }
-.startButton {
-  height: 60px;
-  width: 20%;
-  margin-top: 20px;
-  color: white;
-  font-size: 16px;
-  border: none;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
 
-a:hover { 
-  text-decoration: none; 
-  color: black;
-}
-.links {
-  display: flex;
-  justify-content: center;
-}
-.img2 {
-  width: 20%;
-}
 ul#horizontal-list {
   display: flex;
   justify-content: center;
   min-width: 696px;
   margin: 0 auto;
-  /* margin-left: 40%;
-  margin-right: 35%; */
   list-style: none;
   padding-top: 20px;
   padding-left: 0;
   font-size: 16px;
-
 } 
 
 ul#horizontal-list li {
@@ -174,6 +181,93 @@ ul#horizontal-list li {
 li:hover {
   color: gray;
 }
+
+.cvButton {
+  height: 60px;
+  width: 30%;
+  margin-top: 20px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.cvButton:hover {
+  background-color: #4b6588;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+p {
+  margin: 10px 90px 20px 90px;
+}
+.links {
+  font-size: 24px;
+  font-weight: bold;
+}
+}
+@media only screen and (min-width: 1025px){ /*desktop*/
+.images {
+width: 100%; 
+}
+
+.hamburger {
+  display: none;
+}
+
+ul#horizontal-list {
+  display: flex;
+  justify-content: center;
+  min-width: 696px;
+  margin: 0 auto;
+  list-style: none;
+  padding-top: 20px;
+  padding-left: 0;
+  font-size: 16px;
+}
+.cvButton {
+  height: 60px;
+  width: 20%;
+  margin-top: 20px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.cvButton:hover {
+  background-color: #4b6588;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+a:hover { 
+  text-decoration: none; 
+  color: darkblue;
+}
+
+.img2 {
+  width: 20%;
+}
+
+ul#horizontal-list {
+  display: flex;
+  justify-content: center;
+  min-width: 696px;
+  margin: 0 auto;
+  list-style: none;
+  padding-top: 20px;
+  padding-left: 0;
+  font-size: 16px;
+} 
+
+ul#horizontal-list li {
+  display: inline;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+li:hover {
+  color: gray;
+}
+
 p {
   margin: 10px 200px 20px 200px;
 }
@@ -183,7 +277,6 @@ h1 {
 }
 
 .gallery {
-  
   width:100%;
   object-fit: contain;
 }
@@ -191,19 +284,4 @@ h1 {
 header {
   padding: 2% 0;
 }
-
 }
-
-/* ul#horizontal-list {
-  min-width: 696px;
-  list-style: none;
-  padding-top: 20px;
-  } */
-  /* ul#horizontal-list li {
-  display: inline;
-  margin-left: 20px;
-  cursor: pointer;
-  }
-  li:hover {
-    color: red;
-  } */
