@@ -89,7 +89,19 @@ nav {
 .hamburger {
   justify-content: flex-end;
   display: flex;
+
 }
+
+/* .menu {
+  background-color: #fafafa;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  transform: translateX(-100%);
+  transition: 0.5s;
+} */
 
 ul#horizontal-list {
   display: none;
